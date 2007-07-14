@@ -1,14 +1,11 @@
-%define version 4.6.3
-%define release %mkrel 1
-
 Summary:	The GNU shar utilities for packaging and unpackaging shell archives
 Name:		sharutils
-Version:	%{version}
-Release:	%{release}
+Version:	4.7
+Release:	%mkrel 1
 License:	GPL
 Group:		Archiving/Backup
-Source:		ftp://ftp.gnu.org/pub/gnu/%name/%name-%version.tar.bz2
 Url:		http://www.gnu.org/software/sharutils/
+Source:		ftp://ftp.gnu.org/pub/gnu/%name/%name-%version.tar.bz2
 #Patch1:		sharutils-4.2-gmo.patch
 #Patch2:		sharutils-4.2-man.patch
 #Patch3:		sharutils-4.2.1-po.patch
@@ -21,9 +18,9 @@ Url:		http://www.gnu.org/software/sharutils/
 #Patch12:	sharutils-4.2.1-CAN-2004-1772.patch
 #Patch13:	sharutils-4.2.1-CAN-2004-1773.patch
 #Patch14:	sharutils-4.2.1-deb-302412.patch
-Prereq:		/sbin/install-info
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Requires(pre):	/sbin/install-info
 BuildRequires:	texinfo
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 The sharutils package contains the GNU shar utilities, a set of tools
@@ -93,5 +90,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_infodir}/*
 %{_mandir}/man?/*
-
-
