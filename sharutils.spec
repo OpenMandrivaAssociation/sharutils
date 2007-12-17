@@ -8,7 +8,6 @@ Url:		http://www.gnu.org/software/sharutils/
 Source:		ftp://ftp.gnu.org/pub/gnu/%name/%name-%version.tar.bz2
 Requires(pre):	info-install
 BuildRequires:	texinfo
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 The sharutils package contains the GNU shar utilities, a set of tools
