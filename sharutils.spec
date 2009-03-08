@@ -5,6 +5,7 @@ Release:	%mkrel 5
 License:	GPL
 Group:		Archiving/Backup
 Url:		http://www.gnu.org/software/sharutils/
+Patch0:		sharutils-4.7-fix-str-fmt.patch
 Source:		ftp://ftp.gnu.org/pub/gnu/%name/%name-%version.tar.bz2
 Requires(pre):	info-install
 BuildRequires:	texinfo
@@ -27,6 +28,7 @@ Install sharutils if you send binary files through email very often.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure2_5x \
