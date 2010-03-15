@@ -1,7 +1,7 @@
 Summary:	The GNU shar utilities for packaging and unpackaging shell archives
 Name:		sharutils
 Version:	4.7
-Release:	%mkrel 6
+Release:	%mkrel 7
 License:	GPL
 Group:		Archiving/Backup
 Url:		http://www.gnu.org/software/sharutils/
