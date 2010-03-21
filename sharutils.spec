@@ -1,12 +1,12 @@
 Summary:	The GNU shar utilities for packaging and unpackaging shell archives
 Name:		sharutils
-Version:	4.7
-Release:	%mkrel 7
-License:	GPL
+Version:	4.9
+Release:	%mkrel 1
+License:	GPLv3
 Group:		Archiving/Backup
 Url:		http://www.gnu.org/software/sharutils/
+Source0:	ftp://ftp.gnu.org/pub/gnu/%name/%name-%version.tar.bz2
 Patch0:		sharutils-4.7-fix-str-fmt.patch
-Source:		ftp://ftp.gnu.org/pub/gnu/%name/%name-%version.tar.bz2
 Requires(pre):	info-install
 BuildRequires:	texinfo
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
