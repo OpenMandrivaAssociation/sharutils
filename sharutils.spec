@@ -1,6 +1,6 @@
 Summary:	The GNU shar utilities for packaging and unpackaging shell archives
 Name:		sharutils
-Version:	4.10
+Version:	4.11
 Release:	%mkrel 1
 License:	GPLv3
 Group:		Archiving/Backup
@@ -57,3 +57,4 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{_infodir}/*
 %{_mandir}/man?/*
+%{_includedir}/sharutils/*
