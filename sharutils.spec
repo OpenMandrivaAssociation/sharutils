@@ -1,6 +1,6 @@
 Summary:	The GNU shar utilities for packaging and unpackaging shell archives
 Name:		sharutils
-Version:	4.11
+Version:	4.11.1
 Release:	%mkrel 1
 License:	GPLv3
 Group:		Archiving/Backup
@@ -37,8 +37,6 @@ Install sharutils if you send binary files through email very often.
 %make
 
 %install
-rm -rf %{buildroot}
-
 %makeinstall_std 
 
 %find_lang %{name}
@@ -57,4 +55,4 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{_infodir}/*
 %{_mandir}/man?/*
-%{_includedir}/sharutils/*
+
