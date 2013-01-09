@@ -1,2 +1,5 @@
+removed_sources:
+  sharutils-4.11.1.tar.bz2: e9c9f869f8ecb3bcb30cc323e02e0a1266aeb109
 sources:
-  "sharutils-4.11.1.tar.bz2": e9c9f869f8ecb3bcb30cc323e02e0a1266aeb109
+  sharutils-4.13.3.tar.xz: 50582fcededd1891c47ec1caa98491e280950cbd
+  sharutils-4.13.3.tar.xz.sig: e9573c42f1397738d93b30aedf56fa1c4d5464d9
