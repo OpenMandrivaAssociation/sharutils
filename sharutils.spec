@@ -8,7 +8,7 @@ Url:		http://www.gnu.org/software/sharutils/
 Source0:	ftp://ftp.gnu.org/pub/gnu/%{name}/%{name}-%{version}.tar.xz
 Source1:	ftp://ftp.gnu.org/pub/gnu/%{name}/%{name}-%{version}.tar.xz.sig
 Patch0:		sharutils-4.13.1-fix-str-fmt.patch
-BuildRequires:	texinfo
+#BuildRequires:	texinfo
 
 %description
 The sharutils package contains the GNU shar utilities, a set of tools
@@ -30,8 +30,7 @@ Install sharutils if you send binary files through email very often.
 %apply_patches
 
 %build
-%configure2_5x \
-	--disable-rpath
+%configure2_5x
 
 %make
 
