@@ -7,7 +7,6 @@ Group:		Archiving/Backup
 Url:		http://www.gnu.org/software/sharutils/
 Source0:	ftp://ftp.gnu.org/pub/gnu/%{name}/%{name}-%{version}.tar.xz
 Source1:	ftp://ftp.gnu.org/pub/gnu/%{name}/%{name}-%{version}.tar.xz.sig
-Patch0:		sharutils-4.13.1-fix-str-fmt.patch
 #BuildRequires:	texinfo
 
 %description
