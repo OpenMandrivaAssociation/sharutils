@@ -6,7 +6,7 @@ License:	GPLv3
 Group:		Archiving/Backup
 Url:		http://www.gnu.org/software/sharutils/
 Source0:	ftp://ftp.gnu.org/pub/gnu/%{name}/%{name}-%{version}.tar.xz
-#Patch0:		sharutils-4.14-Pass-compilation-with-Werror-format-security.patch
+Patch0:		sharutils-4.15-fix-str-fmt.patch
 #BuildRequires:	texinfo
 
 %description
