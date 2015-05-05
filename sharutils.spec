@@ -1,6 +1,6 @@
 Summary:	The GNU shar utilities for packaging and unpackaging shell archives
 Name:		sharutils
-Version:	4.15
+Version:	4.15.1
 Release:	1
 License:	GPLv3
 Group:		Archiving/Backup
