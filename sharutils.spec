@@ -6,7 +6,11 @@ License:	GPLv3
 Group:		Archiving/Backup
 Url:		http://www.gnu.org/software/sharutils/
 Source0:	ftp://ftp.gnu.org/pub/gnu/%{name}/%{name}-%{version}.tar.xz
-Patch0:		sharutils-4.15-fix-str-fmt.patch
+# Pass compilation with -Werror=format-security, bug #1037323
+Patch0:		%{name}-4.14.2-Pass-compilation-with-Werror-format-security.patch
+# Fix a heap buffer overflow in find_archive(), bug #1548019,
+# <http://lists.gnu.org/archive/html/bug-gnu-utils/2018-02/msg00004.html>
+Patch1:		%{name}-4.15.2-Fix-a-heap-buffer-overflow-in-find_archive.patch
 #BuildRequires:	texinfo
 
 %description
