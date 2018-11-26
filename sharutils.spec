@@ -11,7 +11,7 @@ Patch0:		%{name}-4.14.2-Pass-compilation-with-Werror-format-security.patch
 # Fix a heap buffer overflow in find_archive(), bug #1548019,
 # <http://lists.gnu.org/archive/html/bug-gnu-utils/2018-02/msg00004.html>
 Patch1:		%{name}-4.15.2-Fix-a-heap-buffer-overflow-in-find_archive.patch
-#BuildRequires:	texinfo
+Patch2:		gcal-glibc-no-libio.patch
 
 %description
 The sharutils package contains the GNU shar utilities, a set of tools
