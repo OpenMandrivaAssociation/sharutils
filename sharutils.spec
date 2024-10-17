@@ -4,7 +4,7 @@ Version:	4.15.2
 Release:	9
 License:	GPLv3
 Group:		Archiving/Backup
-Url:		http://www.gnu.org/software/sharutils/
+Url:		https://www.gnu.org/software/sharutils/
 Source0:	ftp://ftp.gnu.org/pub/gnu/%{name}/%{name}-%{version}.tar.xz
 # Pass compilation with -Werror=format-security, bug #1037323
 Patch0:		%{name}-4.14.2-Pass-compilation-with-Werror-format-security.patch
