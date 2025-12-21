@@ -21,6 +21,11 @@ Patch3:		%{name}-4.15.2-Fix-building-with-GCC-10.patch
 # <https://lists.gnu.org/archive/html/bug-gnu-utils/2020-01/msg00001.html>
 Patch4:		%{name}-4.15.2-Do-not-include-lib-md5.c-into-src-shar.c.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 The sharutils package contains the GNU shar utilities, a set of tools
 for encoding and decoding packages of files (in binary or text format)
